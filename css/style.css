@@ -21,6 +21,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
+    position: relative;
 }
 
 .participants-container{
@@ -28,6 +29,7 @@ body{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .participant-container{
@@ -37,6 +39,7 @@ body{
     min-height: 100px ;
     flex-shrink: 0;
     border: 4px solid black;
+    position: relative;
 }
 
 .footer-container{
@@ -48,6 +51,10 @@ body{
 }
 
 /*Style for button*/
+
+button:hover {
+    cursor: pointer;
+}
 
 .btn-costumize-screen{
     border: none;
@@ -61,6 +68,17 @@ body{
     padding: 10px 10px;
 }
 
+.page-btn{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    color: white;
+    background-color: rgba(114, 112, 112, 0.733);
+    text-align: center;
+    padding: 10px 15px;
+
+}
+
 .btn-close-met{
     border: none;
     background-color: #464749;
@@ -69,13 +87,44 @@ body{
     color: #e9554a;
 }
 
+.participant-container:hover{
+    border-color: blue;
+}
+
+.user-information-img{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.411);
+    left: 5px;
+    bottom: 10px;
+    padding: 3px;
+}
+
 /*Main Section*/
+.arrow-icon-color{
+    font-size: 30px;
+    color: rgba(127,127,127,255);
+}
+
+.page-btn-left{
+    left: 0;
+}
+
+.page-btn-right{
+    right: 0;
+}
+
+.arrow-icon-color-right{
+    color:rgba(46,186,255,255);
+    font-size: 30px;
+}
 
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 
 /*Footer*/
 
